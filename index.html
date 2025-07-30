@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="images/8.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ&display=swap" rel="stylesheet">
+  <title>TAMOUN Oussama | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <p>TAMOUN Oussama, Web developer</p>
+      <hr />
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-left">
+      <h1>MY<br><span>Portfolio</span></h1>
+    </div>
+    <div class="hero-right">
+      <div class="hero-images">
+        <img loading="lazy" src="images/1.jpg" alt="Code Example 1"/>
+        <img loading="lazy" src="images/2.jpg" alt="Code Example 2"/>
+      </div>
+      <a href="#pro" class="btn-outline">VIEW MY WORKS</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-left">
+      <img loading="lazy" src="images/3.jpg" alt="Laptop with code" />
+    </div>
+    <div class="about-right">
+      <h2>Web development</h2>
+      <hr />
+      <p>
+        Welcome to my portfolio! I’m a front-end developer with a passion for building responsive, accessible, and visually appealing websites. I focus on transforming ideas and designs into functional web pages using modern web technologies.
+        <br><br>
+        My main tools include <strong>HTML, CSS, JavaScript, Bootstrap</strong>, and <strong>PhpMyAdmin</strong> for managing and integrating front-end interfaces with databases. I’m committed to writing clean, efficient code and creating smooth, consistent user experiences across devices.
+        <br><br>
+        Explore my projects below to see what I’ve been working on—and feel free to get in touch if you’d like to collaborate!
+      </p>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <h2 id="pro">Selected Projects</h2>
+    <hr />
+    <div class="project-gallery">
+      <div class="project-card">
+        <img loading="lazy" src="images/4.png" alt="Project 1">
+        <button class="btn-black"><a href="https://oussmen26.github.io/"target="_blank">VOIR</a></button>
+      </div>
+      <div class="project-card">
+        <img loading="lazy" src="images/5.png" alt="Project 2">
+        <button class="btn-black"><a href="https://oussmen26.github.io/realmadrid.github.io/"target="_blank">VOIR</a></button>
+      </div>
+      <div class="project-card">
+        <img loading="lazy" src="images/6.png" alt="Project 3">
+        <button class="btn-black"><a href="https://oussmen26.github.io/formulaire3.github.io/"target="_blank">VOIR</a></button>
+      </div>
+      <div class="project-card">
+        <img loading="lazy" src="images/7.png" alt="Project 4">
+        <button class="btn-black"><a href="https://oussmen26.github.io/formulaire2.github.io/" target="_blank">VOIR</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-left">
+      <h1>Contact<br>Information</h1>
+    </div>
+    <div class="contact-right">
+      <p class="contact-name">TAMOUN Oussama</p>
+      <div class="contact-details">
+        <div>
+          <h4>INSTAGRAM</h4>
+          <p>oussama_tamoun</p>
+        </div>
+        <div>
+          <h4>EMAIL</h4>
+          <p>taharnacho@gmail.com</p>
+        </div>
+        <div>
+          <h4>WHATSAPP</h4>
+          <p>+213556169738</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll(".btn-black").forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        alert(`Vous avez cliqué sur le projet ${index + 1}`);
+      });
+    });
+  </script>
+
+</body>
+</html>
